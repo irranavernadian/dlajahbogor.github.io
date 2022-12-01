@@ -10,27 +10,38 @@
     <title>TravelGuide Site Template - Easly find places, guides, directions, info.</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png" />
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png" />
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" />
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="../img/apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../img/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="../img/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../img/apple-touch-icon-144x144-precomposed.png" />
 
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300" rel="stylesheet" type="text/css" />
 
     <!-- BASE CSS -->
-    <link href="css/animate.min.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/menu.css" rel="stylesheet" />
-    <link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <link href="../css/animate.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/menu.css" rel="stylesheet" />
+    <link href="../css/icon_fonts/css/all_icons.min.css" rel="stylesheet" />
 
     <!-- SPECIFIC CSS -->
-    <link href="css/magnific-popup.min.css" rel="stylesheet" />
+    <link href="../css/magnific-popup.min.css" rel="stylesheet" />
 
     <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
+
+    <style>
+      .coba{
+        height: 300px;
+        width: 100%;
+        background-color: blue;
+        margin-bottom: 20px;
+      }
+    </style>
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
@@ -49,16 +60,16 @@
         <div class="row">
           <div class="col--md-4 col-sm-3 col-xs-4">
             <div id="logo_home">
-              <h1><a href="index.html" title="TravelGuide template">TravelGuide template</a></h1>
+              <h1><a href="../index.html" title="TravelGuide template">TravelGuide template</a></h1>
             </div>
           </div>
           <nav class="col--md-8 col-sm-9 col-xs-8">
             <ul id="primary_nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="wisata.html">Wisata</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="about.html">About US</a></li>
-              <li><a href="contacts.html">Contact</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../wisata.html">Wisata</a></li>
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../about.html">About US</a></li>
+              <li><a href="../contacts.html">Contact</a></li>
               <li id="search">
                 <div class="dropdown dropdown-search">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i></a>
@@ -129,7 +140,7 @@
           <div class="theiaStickySidebar">
             <ul id="tools_2">
               <li>
-                <a href="wishlist.html"><i class="icon-bookmark-empty-1"></i>Add to bookmarks</a>
+                <a href="../wishlist.html"><i class="icon-bookmark-empty-1"></i>Add to bookmarks</a>
               </li>
               <li>
                 <form action="http://maps.google.com/maps" method="get" target="_blank">
@@ -138,16 +149,16 @@
                 </form>
               </li>
               <li>
-                <a href="florence-audio-guides.html"><i class="icon_volume-high_alt"></i>Audio guide</a>
+                <a href="../florence-audio-guides.html"><i class="icon_volume-high_alt"></i>Audio guide</a>
               </li>
               <li>
                 <a href="#0"><i class="icon_cloud-download_alt"></i>Download pdf guide</a>
               </li>
               <li class="magnific-gallery">
-                <a href="img/gallery/pic_1.jpg" title="Photo title"><i class="icon_images"></i>View Gallery</a>
-                <a href="img/gallery/pic_2.jpg" title="Photo title" class="hidden"></a>
-                <a href="img/gallery/pic_3.jpg" title="Photo title" class="hidden"></a>
-                <a href="img/gallery/pic_4.jpg" title="Photo title" class="hidden"></a>
+                <a href="../img/gallery/pic_1.jpg" title="Photo title"><i class="icon_images"></i>View Gallery</a>
+                <a href="../img/gallery/pic_2.jpg" title="Photo title" class="hidden"></a>
+                <a href="../img/gallery/pic_3.jpg" title="Photo title" class="hidden"></a>
+                <a href="../img/gallery/pic_4.jpg" title="Photo title" class="hidden"></a>
               </li>
               <li class="magnific-gallery">
                 <a href="https://www.youtube.com/watch?v=a-jAU9lOqnI" class="video" title="Video title"><i class="icon_film"></i>View Video</a>
@@ -157,9 +168,15 @@
           <!--End sticky -->
         </aside>
         <!--End aside -->
+
         <div class="col-md-9 col-md-pull-3">
           <div class="box_style_general add_bottom_30">
             <div class="row">
+              <div class="coba">
+                <div class="card-body">
+                  <div id="map" style="width: 100%; height: 300px; margin: auto ; z-index: 0; "></div>
+                </div>
+              </div>
               <div class="col-md-6">
                 <div class="box_info">
                   <h3>Opening</h3>
@@ -206,11 +223,11 @@
               denique eam ne. Augue invidunt has ad, <strong>ullum debitis</strong> mea ei, ne aliquip dignissim nec.
             </p>
             <p>
-              <img src="img/duomo.jpg" class="img-responsive" alt="" />
+              <img src="../img/duomo.jpg" class="img-responsive" alt="" />
             </p>
             <h4>Plan and structure</h4>
             <p>
-              Lorem<img src="img/map_content.jpg" alt="" class="pull-right" /> ipsum <a href="#0">dolor sit amet</a>, te his solum dicunt eligendi. Adhuc malis exerci ne eum. Ne vel errem similique, pro id veri postea atomorum. Et mei
+              Lorem<img src="../img/map_content.jpg" alt="" class="pull-right" /> ipsum <a href="#0">dolor sit amet</a>, te his solum dicunt eligendi. Adhuc malis exerci ne eum. Ne vel errem similique, pro id veri postea atomorum. Et mei
               tincidunt efficiendi adversarium. Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.
             </p>
             <p>
@@ -246,7 +263,7 @@
                 <div class="cbp_tmicon">1</div>
                 <div class="cbp_tmlabel">
                   <div class="hidden-xs">
-                    <img src="img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit" />
+                    <img src="../img/tour_plan_1.jpg" alt="" class="img-circle thumb_visit" />
                   </div>
                   <h4>Interior of the cathedral</h4>
                   <p>Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.</p>
@@ -257,7 +274,7 @@
                 <div class="cbp_tmicon">2</div>
                 <div class="cbp_tmlabel">
                   <div class="hidden-xs">
-                    <img src="img/tour_plan_2.jpg" alt="" class="img-circle thumb_visit" />
+                    <img src="../img/tour_plan_2.jpg" alt="" class="img-circle thumb_visit" />
                   </div>
                   <h4>Statue of Saint Reparata</h4>
                   <p>Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.</p>
@@ -268,7 +285,7 @@
                 <div class="cbp_tmicon">3</div>
                 <div class="cbp_tmlabel">
                   <div class="hidden-xs">
-                    <img src="img/tour_plan_3.jpg" alt="" class="img-circle thumb_visit" />
+                    <img src="../img/tour_plan_3.jpg" alt="" class="img-circle thumb_visit" />
                   </div>
                   <h4>Huge clock decorated</h4>
                   <p>Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.</p>
@@ -279,7 +296,7 @@
                 <div class="cbp_tmicon">4</div>
                 <div class="cbp_tmlabel">
                   <div class="hidden-xs">
-                    <img src="img/tour_plan_4.jpg" alt="" class="img-circle thumb_visit" />
+                    <img src="../img/tour_plan_4.jpg" alt="" class="img-circle thumb_visit" />
                   </div>
                   <h4>Vasari's fresco</h4>
                   <p>Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.</p>
@@ -365,8 +382,8 @@
             <div>
               <div class="img_wrapper">
                 <div class="img_container">
-                  <a href="florence-event-detail.html">
-                    <img src="img/must_see_list_6.jpg" width="800" height="533" class="img-responsive" alt="" />
+                  <a href="../florence-event-detail.html">
+                    <img src="../img/must_see_list_6.jpg" width="800" height="533" class="img-responsive" alt="" />
                     <div class="short_info">
                       <small>1.30 min</small>
                       <h3>Duomo Cathedral</h3>
@@ -647,18 +664,18 @@
     <!-- End Footer =============================================== -->
 
     <!-- COMMON SCRIPTS -->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/common_scripts_min.js"></script>
-    <script src="assets/validate.js"></script>
-    <script src="js/functions.js"></script>
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="../js/common_scripts_min.js"></script>
+    <script src="../assets/validate.js"></script>
+    <script src="../js/functions.js"></script>
 
     <!-- SPECIFIC SCRIPTS -->
     <!-- Fixed sidebar + Carousel -->
-    <script src="js/theia-sticky-sidebar.min.js"></script>
-    <script src="js/sidebar_carousel_detail_page_func.js"></script>
+    <script src="../js/theia-sticky-sidebar.min.js"></script>
+    <script src="../js/sidebar_carousel_detail_page_func.js"></script>
     <!-- Circular Progress-->
-    <script src="js/raphael-2.1.4.min.js"></script>
-    <script src="js/justgage.min.js"></script>
+    <script src="../js/raphael-2.1.4.min.js"></script>
+    <script src="../js/justgage.min.js"></script>
     <script>
       "use strict";
       var dflt = {
@@ -683,6 +700,47 @@
         min: 0,
         max: 140,
       });
+    </script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+  
+    <script type="text/javascript">
+      const map = L.map('map').setView([-6.596553, 106.803562], 14);
+      googleStreets = L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+      });
+      googleStreets.addTo(map);
+   
+      //Custom Marker
+      var Icon1 = L.icon({ iconUrl: '../img/events_list_1.jpg', iconSize: [70, 70] });
+  
+      // // //Rute
+      // L.Routing.control({
+      //   waypoints: [
+      //     L.latLng(-6.589581484785318, 106.8057497418744),
+      //     L.latLng(-6.608561679577814, 106.79463399235692)
+      //   ]
+      // }).addTo(map);
+  
+      //Marker
+      L.marker([-6.608561679577814, 106.79463399235692], { icon: Icon1 }).addTo(map)
+        .bindPopup(`<div class="coba"></div>`)
+
+      L.marker([-6.589581484785318, 106.8057497418744]).addTo(map)
+        .bindPopup(`<div class="coba"></div>`)
+  
+
+      var latlngs =
+        [[-6.6085277883461115, 106.7945277277327],
+        [-6.608872731519461, 106.79451602265826],
+        [-6.608880483048671, 106.79468925776],
+        [-6.608593676386585, 106.79470096283444],
+        [-6.6085874751596085, 106.79468223471532],
+        [-6.6085339895738375, 106.79468457573023]];
+      var polygon = L.polygon(latlngs, { color: 'red' }).addTo(map);
+  
+  
     </script>
   </body>
 </html>
