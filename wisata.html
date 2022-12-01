@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="TravelGuide Site Template - Easly find places, guides, directions, info." />
+    <meta name="author" content="Ansonika" />
+    <title>Dlajah Bogor - Jelajah Wisata Bogor Yuk!</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png" />
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300" rel="stylesheet" type="text/css" />
+
+    <!-- BASE CSS -->
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet" />
+
+    <!-- SPECIFIC CSS -->
+    <link href="css/ion.rangeSlider.css" rel="stylesheet" />
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!--[if lte IE 8]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+    <![endif]-->
+
+    <div class="layer"></div>
+    <!-- Menu mask -->
+
+    <!-- Header ================================================== -->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col--md-4 col-sm-3 col-xs-4">
+            <div id="logo_home">
+              <h1><a href="index.html" title="Dlajah Bogor">Dlajah Bogor</a></h1>
+            </div>
+          </div>
+          <nav class="col--md-8 col-sm-9 col-xs-8">
+            <ul id="primary_nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="wisata.html">Wisata</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">Tentang</a></li>
+              <li><a href="contacts.html">Kontak</a></li>
+              <li id="search">
+                <div class="dropdown dropdown-search">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i></a>
+                  <div class="dropdown-menu">
+                    <form>
+                      <div id="custom-search-input-header">
+                        <input type="text" class="form-control" placeholder="Search..." />
+                        <input type="submit" class="btn_search_2" value="submit" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- End main-menu -->
+          </nav>
+        </div>
+        <!-- End row -->
+      </div>
+      <!-- End container -->
+    </header>
+    <!-- End Header =============================================== -->
+
+    <div class="container-fluid full-height">
+      <div class="row row-height">
+        <div class="col-lg-7 col-md-6 content-left">
+          <div id="filters_map">
+            <a data-toggle="collapse" href="#collapseFiltesmap" aria-expanded="false" aria-controls="collapseFiltesmap" class="btn_filter" id="open_filters"></a>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-6">
+              <div class="img_wrapper">
+                <div class="ribbon">
+                  <span>Popular</span>
+                </div>
+                <div class="tools_i">
+                  <div class="directions_list_map" onclick="onHtmlClick('Wisata', 0)">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">View on map</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End tool_i -->
+                <div class="img_container">
+                  <a href="florence-must-see-detail.html">
+                    <img src="img/must_see_list_1.jpg" width="800" height="533" class="img-responsive" alt="" />
+                    <div class="short_info">
+                      <h3>Santa Maria del Fiorel</h3>
+                      <em>Historic Buildings</em>
+                      <p>A quam morbi ut arcu, eget neque molestie, ullamcorper congue pharetra, hendrerit odio consectetuer.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End img_wrapper -->
+            </div>
+            <!-- End col-md-6 -->
+            <div class="col-lg-6 col-md-12 col-sm-6">
+              <div class="img_wrapper">
+                <div class="ribbon">
+                  <span>Popular</span>
+                </div>
+                <div class="tools_i">
+                  <div class="directions_list_map" onclick="onHtmlClick('Wisata', 1)">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">View on map</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End tool_i -->
+                <div class="img_container">
+                  <a href="florence-must-see-detail.html">
+                    <img src="img/must_see_list_2.jpg" width="800" height="533" class="img-responsive" alt="" />
+                    <div class="short_info">
+                      <small>1.30 min</small>
+                      <h3>Santa Maria Novella</h3>
+                      <em>Historic Buildings</em>
+                      <p>A quam morbi ut arcu, eget neque molestie, ullamcorper congue pharetra, hendrerit odio consectetuer.</p>
+                      <div class="score_wp">
+                        Superb
+                        <div id="score_2" class="score" data-value="8.5"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End img_wrapper -->
+            </div>
+            <!-- End col-md-6 -->
+          </div>
+          <!-- End row -->
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-6">
+              <div class="img_wrapper">
+                <div class="ribbon">
+                  <span>Popular</span>
+                </div>
+                <div class="tools_i">
+                  <div class="directions_list_map" onclick="onHtmlClick('Wisata', 2)">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">View on map</div>
+                    </a>
+                  </div>
+                  <div class="wishlist">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">Bookmark</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End tool_i -->
+                <div class="img_container">
+                  <a href="florence-must-see-detail.html">
+                    <img src="img/must_see_list_3.jpg" width="800" height="533" class="img-responsive" alt="" />
+                    <div class="short_info">
+                      <small>1.10 min</small>
+                      <h3>Uffizi Gallery</h3>
+                      <em>Museum</em>
+                      <p>A quam morbi ut arcu, eget neque molestie, ullamcorper congue pharetra, hendrerit odio consectetuer.</p>
+                      <div class="score_wp">
+                        Superb
+                        <div id="score_3" class="score" data-value="7.5"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End img_wrapper -->
+            </div>
+            <!-- End col-md-6 -->
+            <div class="col-lg-6 col-md-12 col-sm-6">
+              <div class="img_wrapper">
+                <div class="ribbon">
+                  <span>Popular</span>
+                </div>
+                <div class="tools_i">
+                  <div class="directions_list_map" onclick="onHtmlClick('Wisata', 3)">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">View on map</div>
+                    </a>
+                  </div>
+                  <div class="wishlist">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">Bookmark</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End tool_i -->
+                <div class="img_container">
+                  <a href="florence-must-see-detail.html">
+                    <img src="img/must_see_list_4.jpg" width="800" height="533" class="img-responsive" alt="" />
+                    <div class="short_info">
+                      <small>1.30 min</small>
+                      <h3>Piazza della Signoria</h3>
+                      <em>Interesting place</em>
+                      <p>A quam morbi ut arcu, eget neque molestie, ullamcorper congue pharetra, hendrerit odio consectetuer.</p>
+                      <div class="score_wp">
+                        Superb
+                        <div id="score_4" class="score" data-value="7.5"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End img_wrapper -->
+            </div>
+            <!-- End col-md-6 -->
+          </div>
+          <!-- End row -->
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-6">
+              <div class="img_wrapper">
+                <div class="ribbon">
+                  <span>Popular</span>
+                </div>
+                <div class="tools_i">
+                  <div class="directions_list_map" onclick="onHtmlClick('Wisata', 4)">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">View on map</div>
+                    </a>
+                  </div>
+                  <div class="wishlist">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">Bookmark</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End tool_i -->
+                <div class="img_container">
+                  <a href="florence-must-see-detail.html">
+                    <img src="img/must_see_list_5.jpg" width="800" height="533" class="img-responsive" alt="" />
+                    <div class="short_info">
+                      <small>1.30 min</small>
+                      <h3>Ponte Vecchio</h3>
+                      <em>Architectural Buildings</em>
+                      <p>A quam morbi ut arcu, eget neque molestie, ullamcorper congue pharetra, hendrerit odio consectetuer.</p>
+                      <div class="score_wp">
+                        Superb
+                        <div id="score_5" class="score" data-value="7.5"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End img_wrapper -->
+            </div>
+            <!-- End col-md-6 -->
+            <div class="col-lg-6 col-md-12 col-sm-6">
+              <div class="img_wrapper">
+                <div class="ribbon top">
+                  <span>Top rated</span>
+                </div>
+                <div class="tools_i">
+                  <div class="directions_list_map" onclick="onHtmlClick('Wisata', 5)">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">View on map</div>
+                    </a>
+                  </div>
+                  <div class="wishlist">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">Bookmark</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End tool_i -->
+                <div class="img_container">
+                  <a href="florence-must-see-detail.html">
+                    <img src="img/must_see_list_6.jpg" width="800" height="533" class="img-responsive" alt="" />
+                    <div class="short_info">
+                      <small>1.30 min</small>
+                      <h3>Duomo Cathedral</h3>
+                      <em>Architectural Buildings</em>
+                      <p>A quam morbi ut arcu, eget neque molestie, ullamcorper congue pharetra, hendrerit odio consectetuer.</p>
+                      <div class="score_wp">
+                        Superb
+                        <div id="score_6" class="score" data-value="9.5"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End img_wrapper -->
+            </div>
+            <!-- End col-md-6 -->
+          </div>
+          <!-- End row -->
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-6">
+              <div class="img_wrapper">
+                <div class="ribbon top">
+                  <span>Top rated</span>
+                </div>
+                <div class="tools_i">
+                  <div class="directions_list_map" onclick="onHtmlClick('Wisata', 6)">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">View on map</div>
+                    </a>
+                  </div>
+                  <div class="wishlist">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">Bookmark</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End tool_i -->
+                <div class="img_container">
+                  <a href="florence-must-see-detail.html">
+                    <img src="img/must_see_list_7.jpg" width="800" height="533" class="img-responsive" alt="" />
+                    <div class="short_info">
+                      <small>1.30 min</small>
+                      <h3>Michelangelo Sculpture</h3>
+                      <em>Historic Buildings</em>
+                      <p>A quam morbi ut arcu, eget neque molestie, ullamcorper congue pharetra, hendrerit odio consectetuer.</p>
+                      <div class="score_wp">
+                        Superb
+                        <div id="score_7" class="score" data-value="6.5"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End img_wrapper -->
+            </div>
+            <!-- End col-md-6 -->
+            <div class="col-lg-6 col-md-12 col-sm-6">
+              <div class="img_wrapper">
+                <div class="ribbon top">
+                  <span>Top rated</span>
+                </div>
+                <div class="tools_i">
+                  <div class="directions_list_map" onclick="onHtmlClick('Wisata', 7)">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">View on map</div>
+                    </a>
+                  </div>
+                  <div class="wishlist">
+                    <a class="tooltip_styled tooltip-effect-4"
+                      ><span class="tooltip-item"></span>
+                      <div class="tooltip-content">Bookmark</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- End tool_i -->
+                <div class="img_container">
+                  <a href="florence-must-see-detail.html">
+                    <img src="img/must_see_list_8.jpg" width="800" height="533" class="img-responsive" alt="" />
+                    <div class="short_info">
+                      <small>1.30 min</small>
+                      <h3>Vasari Sculpture</h3>
+                      <em>Historic Buildings</em>
+                      <p>A quam morbi ut arcu, eget neque molestie, ullamcorper congue pharetra, hendrerit odio consectetuer.</p>
+                      <div class="score_wp">
+                        Superb
+                        <div id="score_8" class="score" data-value="8.0"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- End img_wrapper -->
+            </div>
+            <!-- End col-md-6 -->
+          </div>
+          <!-- End row -->
+          <nav>
+            <ul class="pagination">
+              <li class="disabled">
+                <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+              </li>
+              <li class="active">
+                <a href="#">1 <span class="sr-only">(current)</span></a>
+              </li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- End content-left-->
+
+        <div class="col-lg-5 col-md-6 map-right">
+          <div class="map" id="map"></div>
+          <!-- map-->
+        </div>
+      </div>
+      <!-- End row-->
+    </div>
+    <!-- End container-fluid -->
+
+    <!-- Footer ================================================== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h3>Tentang</h3>
+            <p>Dlajah Bogor adalah situs yang dapat kamu gunakan untuk mencari rekomendasi tempat wisata di Bogor.</p>
+            <p><img src="img/logo_2.png" alt="img" class="hidden-xs" width="170" height="30" data-retina="true" /></p>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <h3>Fitur</h3>
+            <ul>
+              <li><a href="#0">Wisata</a></li>
+              <li><a href="#0">Blog</a></li>
+              <li><a href="#0">Tentang</a></li>
+              <li><a href="#0">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-5" id="newsletter">
+            <h3>Info Terupdate</h3>
+            <p>Dapatkan informasi terupdate seputar Tempat Wisata di Bogor dengan mendaftarkan emailmu dibawah.</p>
+            <div id="message-newsletter_2"></div>
+            <form method="post" action="assets/newsletter.php" name="newsletter_2" id="newsletter_2">
+              <div class="form-group">
+                <input name="email_newsletter_2" id="email_newsletter_2" type="email" value="" placeholder="Email" class="form-control" />
+              </div>
+              <p>
+                <input type="submit" value="Daftar" class="button" id="submit-newsletter_2" />
+              </p>
+            </form>
+          </div>
+        </div>
+        <!-- End row -->
+        <hr />
+        <div class="row">
+          <div class="col-sm-5">© Dlajah Bogor 2022 - All Rights Reserved</div>
+          <div class="col-sm-6">
+            <div id="social_footer">
+              <ul>
+                <li>
+                  <a href="#0"><i class="icon-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="icon-google"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="icon-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End row -->
+      </div>
+      <!-- End container -->
+    </footer>
+    <!-- End Footer =============================================== -->
+
+    <!-- COMMON SCRIPTS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="assets/validate.js"></script>
+    <script src="js/functions.js"></script>
+
+    <!-- SPECIFIC SCRIPTS -->
+    <script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage.min.js"></script>
+    <script src="js/score.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/wisata.js"></script>
+    <script src="js/infobox.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/switchery.js"></script>
+    <script>
+      "use strict";
+      var elems = Array.prototype.slice.call(document.querySelectorAll(".js-switch"));
+      elems.forEach(function (html) {
+        var switchery = new Switchery(html, {
+          size: "small",
+        });
+      });
+
+      $("#range").ionRangeSlider({
+        hide_min_max: true,
+        keyboard: true,
+        min: 30,
+        max: 180,
+        from: 60,
+        to: 130,
+        type: "double",
+        step: 1,
+        prefix: "Min. ",
+        grid: false,
+      });
+    </script>
+  </body>
+</html>
